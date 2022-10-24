@@ -1,15 +1,26 @@
 from parseData import parseData
 
-class naiveBayes:
+# def parse(files, fields): 
+#     tables =[]
+#     for file in files:
+#         tables.append(parseData(file,fields))        
+#     return tables
 
-    def __init__(self,files) -> None: 
-        self.files= files
+class naiveBayes:
+    def __init__(self) -> None: 
         pass
 
-    def parse(self, fields): 
-        for file in self.files:
-         tables = parseData(fields)
 
-
-    def classify(self): 
+    def classify(self,files,fields): 
+        for file in files:
+            tables= parseData(file, fields)
         
+        # for i,field in enumerate(fields):
+        #     for category in tables[i]:
+                
+
+        # for cat1 in fields[0]:
+        #     for cat2 in fields[1]: 
+        #         for cat3 in fields[2]: 
+                    
+                    
